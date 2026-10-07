@@ -16,8 +16,10 @@
   </head>
   <body>
     <h2>Андрієнко Анастасія Володимирівна</h2>
-    <p>Дата народження: 1 грудня 2006 року. Місце народження: м. Київ</p>
-    <p>
+    <p id="birth-date">
+      Дата народження: 1 грудня 2006 року. Місце народження: м. Київ
+    </p>
+    <p class="education">
       Освіта: Ліцей №230 м.Київ, Національний технічний університет України
       «Київський політехнічний інститут імені Ігоря Сікорського»
     </p>
@@ -48,8 +50,17 @@
       та красиву природу. Саме тому Будапешт залишив у мене багато приємних
       спогадів, і я хотіла б ще раз побувати там.
     </p>
-    <a href="https://budapest.hu/en" target="_blank">
-      <img src="./img/budapest.jpg" alt="Будапешт" />
-    </a>
+    <div class="img-container">
+      <a href="https://budapest.hu/en" target="_blank" class="img">
+        <img src="./img/budapest.jpg" alt="Будапешт" />
+      </a>
+    </div>
+    <div class="img-buttons">
+      <button class="button-add">Додати</button>
+      <button class="button-increase">Збільшити</button>
+      <button class="button-reduce">Зменшити</button>
+      <button class="button-delete">Видалити</button>
+    </div>
   </body>
+  <script src="./script.js"></script>
 </html>
