@@ -33,8 +33,8 @@ button.addEventListener("click", async () => {
     const email = document.createElement("p");
     postcode.innerHTML = `<b>Postcode:</b> ${userData.location.postcode}`;
     city.innerHTML = `<b>City:</b> ${userData.location.city}`;
-    name.innerHTML = `<b>Postcode:</b> ${userData.name.title} ${userData.name.first} ${userData.name.last}`;
-    email.innerHTML = `<b>Postcode:</b> ${userData.email}`;
+    name.innerHTML = `<b>Name:</b> ${userData.name.title} ${userData.name.first} ${userData.name.last}`;
+    email.innerHTML = `<b>Email:</b> ${userData.email}`;
 
     userBlock.insertAdjacentElement("beforeend", userImage);
 
