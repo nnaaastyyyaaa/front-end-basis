@@ -68,7 +68,11 @@ const validateInput = (e) => {
     e.target.classList.remove("valid");
   }
 
-  if ([...input].every((el) => el.classList.contains("valid"))) {
+  if (
+    [...form.querySelectorAll("input")].every((el) =>
+      el.classList.contains("valid"),
+    )
+  ) {
     button.disabled = false;
     button.classList.remove("invalid");
   } else {
