@@ -32,7 +32,7 @@ jobs:
       - name: Build lab7 React app
         working-directory: lab7/my-app
         run: |
-          npm ci
+          npm install --legacy-peer-deps
           npm run build
 
       - name: Assemble site (all labs + built lab7)
