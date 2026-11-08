@@ -9,7 +9,11 @@ function Image() {
       <div>
         {Array.from({ length: imagesCounter }).map((_, i) => (
           <a href="https://budapest.hu/en" target="_blank" class="img">
-            <img src="budapest.jpg" alt="Будапешт" width={imgWidth} />
+            <img
+              src={process.env.PUBLIC_URL + "budapest.jpg"}
+              alt="Будапешт"
+              width={imgWidth}
+            />
           </a>
         ))}
       </div>
