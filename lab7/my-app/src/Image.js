@@ -15,7 +15,7 @@ function Image() {
             class="img"
           >
             <img
-              src={process.env.PUBLIC_URL + "budapest.jpg"}
+              src={process.env.PUBLIC_URL + "/budapest.jpg"}
               alt="Будапешт"
               width={imgWidth}
             />
