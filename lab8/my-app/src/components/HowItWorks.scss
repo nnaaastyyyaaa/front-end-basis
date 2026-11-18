@@ -29,4 +29,42 @@
     flex-shrink: 0;
     margin: 0 60px;
   }
+
+  @media (max-width: 1200px) {
+    &__steps {
+      margin: 60px auto 0;
+      justify-content: center;
+    }
+
+    &__arrow {
+      width: 70px;
+      margin: 0 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__title {
+      padding: 0 var(--gap-x);
+      font-size: 28px;
+    }
+
+    &__steps {
+      margin: 50px var(--gap-x) 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      gap: 40px;
+    }
+
+    &__arrow {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: 24px;
+    }
+  }
 }

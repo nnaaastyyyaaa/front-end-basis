@@ -4,17 +4,31 @@ import { useModal } from "../context/Modal";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { openModal } = useModal();
 
   return (
     <div className="header">
       <button className="header__logo">Design</button>
-      <ul className="header__menu">
+      <button
+        className={
+          "header__burger" + (isMenuOpen ? " header__burger--open" : "")
+        }
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Menu"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+      <ul
+        className={"header__menu" + (isMenuOpen ? " header__menu--open" : "")}
+      >
         <li className="header__menu--item">Home</li>
         <li
           className="header__menu--item header__dropdown"
-          onClick={() => setIsOpen(!isOpen)}
-          onMouseLeave={() => setIsOpen(false)}
+          onPointerEnter={(e) => e.pointerType === "mouse" && setIsOpen(true)}
+          onPointerLeave={(e) => e.pointerType === "mouse" && setIsOpen(false)}
         >
           <button
             className="header__dropdown-toggle"
@@ -33,7 +47,12 @@ function Header() {
         <li className="header__menu--item">Inner page</li>
         <li className="header__menu--item">Contact us</li>
       </ul>
-      <button className="header__button" onClick={openModal}>
+      <button
+        className={
+          "header__button" + (isMenuOpen ? " header__button--open" : "")
+        }
+        onClick={openModal}
+      >
         Free templates
       </button>
     </div>

@@ -22,4 +22,22 @@
     font-size: 14px;
     line-height: 1.8;
   }
+
+  @media (max-width: 1200px) {
+    &__value {
+      font-size: 44px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__value {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__value {
+      font-size: 36px;
+    }
+  }
 }

@@ -6,6 +6,10 @@
   background-color: #fff;
   border-radius: 25px;
 
+  @media (max-width: 480px) {
+    padding: 35px 25px;
+  }
+
   &__date {
     color: rgb(130, 130, 150);
     font-family: "Montserrat", sans-serif;

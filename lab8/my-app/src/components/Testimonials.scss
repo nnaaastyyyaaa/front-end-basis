@@ -1,6 +1,6 @@
 .testimonials {
   position: relative;
-  margin: 70px 200px 100px;
+  margin: 70px var(--gap-x) 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,7 +61,7 @@
 
     &--right {
       right: 0;
-      transform: rotate(180deg);
+      transform: translateY(-50%) rotate(180deg);
     }
   }
 
@@ -82,6 +82,18 @@
 
     &--active {
       background-color: rgb(47, 95, 240);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      padding: 0 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__quote {
+      font-size: 14px;
     }
   }
 }

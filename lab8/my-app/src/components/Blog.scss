@@ -3,7 +3,7 @@
 }
 
 .blog {
-  margin: 0 200px 0 100px;
+  margin: 0 var(--gap-x) 0 100px;
   padding: 100px 80px 100px;
 
   &__label {
@@ -25,7 +25,42 @@
 
   &__cards {
     margin-top: 80px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 30px;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 80px 40px;
+
+    &__cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin: 0 var(--gap-x);
+    padding: 70px 0;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__cards {
+      margin-top: 50px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 26px;
+    }
+
+    &__cards {
+      grid-template-columns: 1fr;
+    }
   }
 }
