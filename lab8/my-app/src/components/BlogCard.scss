@@ -1,0 +1,32 @@
+.blog-card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 50px 30px 40px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 25px;
+
+  &__date {
+    color: rgb(130, 130, 150);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    margin-top: 0;
+    color: rgb(1, 8, 58);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}

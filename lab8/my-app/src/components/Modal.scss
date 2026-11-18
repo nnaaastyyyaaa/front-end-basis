@@ -1,0 +1,82 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(1, 8, 58, 0.55);
+
+  &__window {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    padding: 50px 45px 45px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 25px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: rgb(130, 130, 150);
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: rgb(1, 8, 58);
+    }
+  }
+
+  &__title {
+    color: rgb(1, 8, 58);
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__input {
+    padding: 15px 20px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 25px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    outline: none;
+
+    &:focus {
+      border-color: rgb(6, 93, 244);
+    }
+  }
+
+  &__submit {
+    margin-top: 10px;
+    padding: 16px 36px;
+    border: 1px solid rgb(6, 93, 244);
+    border-radius: 35px;
+    background-color: rgb(6, 93, 244);
+    color: rgb(212, 219, 234);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,31 @@
+.blog-container {
+  background-color: rgb(247, 248, 250);
+}
+
+.blog {
+  margin: 0 200px 0 100px;
+  padding: 100px 80px 100px;
+
+  &__label {
+    text-align: center;
+    color: rgb(130, 130, 150);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    color: rgb(1, 8, 58);
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__cards {
+    margin-top: 80px;
+    display: flex;
+    gap: 30px;
+  }
+}

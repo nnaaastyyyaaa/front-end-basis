@@ -3,8 +3,10 @@ import GetStartedItem from "./GetStartedItem";
 import HeroQuote from "./HeroQuote";
 import Icon1 from "../assets/icons/icon1.svg?react";
 import Icon2 from "../assets/icons/icon2.svg?react";
+import { useModal } from "../context/Modal";
 
 function GetStarted() {
+  const { openModal } = useModal();
   return (
     <div className="get-started">
       <div className="get-started__info">
@@ -17,7 +19,9 @@ function GetStarted() {
           live in Bookmarksgrove right at the coast of the Semantics, a large
           language ocean.
         </p>
-        <button className="get-started__button">Get started</button>
+        <button className="get-started__button" onClick={openModal}>
+          Get started
+        </button>
         <div className="get-started__items">
           <GetStartedItem
             icon={Icon1}

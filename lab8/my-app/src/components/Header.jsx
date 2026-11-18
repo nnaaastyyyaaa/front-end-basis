@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./Header.scss";
+import { useModal } from "../context/Modal";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const { openModal } = useModal();
 
   return (
     <div className="header">
@@ -31,7 +33,9 @@ function Header() {
         <li className="header__menu--item">Inner page</li>
         <li className="header__menu--item">Contact us</li>
       </ul>
-      <button className="header__button">Free templates</button>
+      <button className="header__button" onClick={openModal}>
+        Free templates
+      </button>
     </div>
   );
 }

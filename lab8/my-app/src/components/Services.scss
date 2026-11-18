@@ -1,0 +1,95 @@
+.services-container {
+  background-color: rgb(247, 248, 250);
+}
+
+.services {
+  margin: 120px 200px 0;
+  padding: 80px 110px 80px 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+  &__info {
+    max-width: 380px;
+  }
+
+  &__label {
+    color: rgb(130, 130, 150);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: rgb(1, 8, 58);
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px;
+    line-height: 2;
+    color: rgb(23, 29, 72);
+  }
+
+  &__check {
+    width: 16px;
+    flex-shrink: 0;
+  }
+
+  &__button {
+    border-radius: 35px;
+    border: 1px solid rgb(6, 93, 244);
+    background-color: rgb(6, 93, 244);
+    padding: 16px 36px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(212, 219, 234);
+    cursor: pointer;
+  }
+
+  &__image {
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -130px;
+  }
+
+  &__photo {
+    position: relative;
+    display: block;
+    width: 530px;
+  }
+
+  &__dots {
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    width: 310px;
+    height: 270px;
+    background-image: radial-gradient(
+      circle,
+      rgb(190, 190, 200) 1.5px,
+      transparent 1.5px
+    );
+    background-size: 15px 15px;
+  }
+}

@@ -8,7 +8,7 @@ export default function HeroQuote({
   return (
     <figure className="hero-quote">
       <span className="hero-quote__backdrop" aria-hidden="true" />
-      <img className="hero-quote__photo" src="/woman.png" alt="woman" />
+      <img className="hero-quote__photo" src="/img/woman.png" alt="woman" />
 
       <div className="hero-quote__card">
         <p className="hero-quote__text">{quote}</p>
