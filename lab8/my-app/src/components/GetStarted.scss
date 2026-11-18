@@ -1,0 +1,41 @@
+.get-started {
+  margin: 0 200px;
+  display: flex;
+  gap: 60px;
+  flex-shrink: 1;
+
+  &__info {
+    flex: 0 0 auto;
+  }
+
+  &__title {
+    color: rgb(23, 29, 72);
+    font-family: "Montserrat", sans-serif;
+    font-size: 58px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 480px;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+
+  &__button {
+    border-radius: 35px;
+    border: 1px solid rgb(6, 93, 244);
+    background-color: rgb(6, 93, 244);
+    padding: 16px 36px;
+    font-size: 16px;
+    color: rgb(212, 219, 234);
+    margin-top: 28px;
+    cursor: pointer;
+  }
+
+  &__items {
+    margin-top: 56px;
+    display: flex;
+    gap: 70px;
+  }
+}

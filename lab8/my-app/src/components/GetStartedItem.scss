@@ -1,0 +1,13 @@
+.item {
+  &__title {
+    color: rgb(23, 29, 72);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: rgb(179, 179, 179);
+    max-width: 180px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}

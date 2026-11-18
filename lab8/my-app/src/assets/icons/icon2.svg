@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" role="img" aria-label="Blueprint">
+  <circle cx="46" cy="28" r="22" fill="#2F5BFF"/>
+  <g stroke="#14143C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- sheet with curled corner -->
+    <path d="M16 44a8 8 0 0 1 8-8h8"/>
+    <path d="M16 44v34a6 6 0 0 0 6 6h60a4 4 0 0 0 4-4V42a4 4 0 0 0-4-4H32"/>
+    <path d="M24 36c-4 0-8 3-8 8"/>
+    <!-- text lines -->
+    <path d="M28 48h14M28 54h22M28 60h10"/>
+    <path d="M46 60h4" />
+    <!-- dot grid -->
+    <rect x="30" y="68" width="4" height="4" rx=".6"/><rect x="38" y="68" width="4" height="4" rx=".6"/><rect x="46" y="68" width="4" height="4" rx=".6"/>
+    <rect x="30" y="76" width="4" height="4" rx=".6"/><rect x="38" y="76" width="4" height="4" rx=".6"/><rect x="46" y="76" width="4" height="4" rx=".6"/>
+    <!-- target -->
+    <rect x="62" y="62" width="18" height="18" rx="2"/>
+    <circle cx="71" cy="71" r="4.5"/><circle cx="71" cy="71" r="1" fill="#14143C"/>
+    <!-- pencil -->
+    <g transform="translate(86 12) rotate(135)">
+      <rect x="0" y="-5" width="28" height="10" rx="1.5" fill="#fff"/>
+      <path d="M28 -5 40 0 28 5Z" fill="#fff"/>
+      <path d="M6 -5v10M28 -5v10M34 -2.2 38 0l-4 2.2"/>
+    </g>
+  </g>
+</svg>

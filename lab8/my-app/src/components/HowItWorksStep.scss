@@ -1,0 +1,19 @@
+.step {
+  position: relative;
+
+  &__title {
+    color: rgb(1, 8, 58);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: fit-content;
+  }
+
+  &__text {
+    max-width: 240px;
+    font-size: 14px;
+    line-height: 2;
+    width: fit-content;
+  }
+}

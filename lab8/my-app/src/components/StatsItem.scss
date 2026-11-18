@@ -1,0 +1,25 @@
+.stats-item {
+  max-width: 260px;
+  text-align: center;
+
+  &__value {
+    color: rgb(1, 8, 58);
+    font-family: "Montserrat", sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    color: rgb(23, 29, 72);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: rgb(179, 179, 179);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
