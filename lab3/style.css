@@ -1,0 +1,86 @@
+body {
+  color: white;
+  font-size: 22px;
+}
+.container-float {
+  width: 1000px;
+  height: 750px;
+}
+
+#first-image {
+  width: 50%;
+  height: 33%;
+  background-color: rgb(161, 122, 245);
+  text-align: center;
+  align-content: center;
+  float: left;
+}
+
+#first-text {
+  width: 50%;
+  height: 33%;
+  background-color: rgb(3, 143, 175);
+  text-align: center;
+  align-content: center;
+  float: right;
+}
+
+#clear {
+  clear: both;
+}
+
+#second-text {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(179, 231, 243);
+  text-align: center;
+  align-content: center;
+}
+
+#second-image {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(3, 143, 175);
+  text-align: center;
+  align-content: center;
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 1000px;
+  height: 750px;
+}
+
+.first-image {
+  width: 50%;
+  height: 33%;
+  background-color: rgb(161, 122, 245);
+  text-align: center;
+  align-content: center;
+}
+
+.first-text {
+  width: 50%;
+  height: 33%;
+  background-color: rgb(3, 143, 175);
+  text-align: center;
+  align-content: center;
+}
+
+.second-text {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(179, 231, 243);
+  text-align: center;
+  align-content: center;
+}
+
+.second-image {
+  width: 100%;
+  height: 33%;
+  background-color: rgb(3, 143, 175);
+  text-align: center;
+  align-content: center;
+}
