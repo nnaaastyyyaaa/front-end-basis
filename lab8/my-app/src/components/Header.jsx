@@ -2,14 +2,23 @@ import { useState } from "react";
 import "./Header.scss";
 import { useModal } from "../context/Modal";
 
-function Header() {
+function Header({ route }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { openModal } = useModal();
 
+  function closeMenus() {
+    setIsOpen(false);
+    setIsMenuOpen(false);
+  }
+
+  const active = (path) => (route === path ? " header__link--active" : "");
+
   return (
     <div className="header">
-      <button className="header__logo">Design</button>
+      <a className="header__logo" href="#/" onClick={closeMenus}>
+        Design
+      </a>
       <button
         className={
           "header__burger" + (isMenuOpen ? " header__burger--open" : "")
@@ -24,7 +33,15 @@ function Header() {
       <ul
         className={"header__menu" + (isMenuOpen ? " header__menu--open" : "")}
       >
-        <li className="header__menu--item">Home</li>
+        <li className="header__menu--item">
+          <a
+            className={"header__link" + active("/")}
+            href="#/"
+            onClick={closeMenus}
+          >
+            Home
+          </a>
+        </li>
         <li
           className="header__menu--item header__dropdown"
           onPointerEnter={(e) => e.pointerType === "mouse" && setIsOpen(true)}
@@ -38,14 +55,54 @@ function Header() {
           </button>
           {isOpen && (
             <ul className="header__submenu">
-              <li className="header__submenu--item">Page one</li>
-              <li className="header__submenu--item">Page two</li>
-              <li className="header__submenu--item">Page three</li>
+              <li className="header__submenu--item">
+                <a
+                  className={"header__link" + active("/page-one")}
+                  href="#/page-one"
+                  onClick={closeMenus}
+                >
+                  Page one
+                </a>
+              </li>
+              <li className="header__submenu--item">
+                <a
+                  className={"header__link" + active("/page-two")}
+                  href="#/page-two"
+                  onClick={closeMenus}
+                >
+                  Page two
+                </a>
+              </li>
+              <li className="header__submenu--item">
+                <a
+                  className={"header__link" + active("/page-three")}
+                  href="#/page-three"
+                  onClick={closeMenus}
+                >
+                  Page three
+                </a>
+              </li>
             </ul>
           )}
         </li>
-        <li className="header__menu--item">Inner page</li>
-        <li className="header__menu--item">Contact us</li>
+        <li className="header__menu--item">
+          <a
+            className={"header__link" + active("/inner")}
+            href="#/inner"
+            onClick={closeMenus}
+          >
+            Inner page
+          </a>
+        </li>
+        <li className="header__menu--item">
+          <a
+            className={"header__link" + active("/contact")}
+            href="#/contact"
+            onClick={closeMenus}
+          >
+            Contact us
+          </a>
+        </li>
       </ul>
       <button
         className={

@@ -63,6 +63,17 @@ li {
     border: none;
     color: rgb(6, 93, 244);
     font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    &--active {
+      color: rgb(6, 93, 244);
+    }
   }
 
   &__button {
@@ -124,10 +135,15 @@ li {
     }
 
     &--item {
-      padding: 10px 20px;
+      padding: 0;
       font-size: 14px;
       white-space: nowrap;
       cursor: pointer;
+
+      .header__link {
+        display: block;
+        padding: 10px 20px;
+      }
 
       &:hover {
         color: rgb(6, 93, 244);

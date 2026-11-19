@@ -1,0 +1,66 @@
+.page {
+  margin: 60px var(--gap-x) 80px;
+  min-height: 40vh;
+
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    color: rgb(1, 8, 58);
+    margin: 0 0 20px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 16px;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(6, 93, 244);
+    text-decoration: none;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin-top: 24px;
+  }
+
+  &__input {
+    padding: 12px 16px;
+    border: 1px solid rgb(221, 220, 220);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+  }
+
+  &__textarea {
+    resize: vertical;
+  }
+
+  &__submit {
+    align-self: flex-start;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(6, 93, 244);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  &__success {
+    color: rgb(30, 140, 60);
+  }
+}
+
+@media (max-width: 480px) {
+  .page__title {
+    font-size: 30px;
+  }
+}
