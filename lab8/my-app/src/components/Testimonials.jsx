@@ -47,7 +47,7 @@ function Testimonials() {
       <div className="testimonials__content">
         <img
           className="testimonials__avatar"
-          src={"/img/" + item.avatar + ".png"}
+          src={`${import.meta.env.BASE_URL}img/${item.avatar}.png`}
           alt={item.name}
         />
         <p className="testimonials__quote">{item.quote}</p>

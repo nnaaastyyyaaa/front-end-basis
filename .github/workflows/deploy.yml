@@ -35,13 +35,21 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Assemble site (all labs + built lab7)
+      - name: Build lab8 Vite app
+        working-directory: lab8/my-app
+        run: |
+          npm install
+          npm run build
+
+      - name: Assemble site (all labs + built lab7 + built lab8)
         run: |
           mkdir _site
           rsync -a --exclude='.git' --exclude='.github' --exclude='_site' \
-                --exclude='lab7/my-app' ./ _site/
+                --exclude='lab7/my-app' --exclude='lab8/my-app' ./ _site/
           mkdir -p _site/lab7/my-app
           cp -r lab7/my-app/build/. _site/lab7/my-app/
+          mkdir -p _site/lab8/my-app
+          cp -r lab8/my-app/dist/. _site/lab8/my-app/
 
       - uses: actions/configure-pages@v5
 

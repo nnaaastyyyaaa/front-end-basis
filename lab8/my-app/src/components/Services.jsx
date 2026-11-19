@@ -37,7 +37,11 @@ function Services() {
         </div>
         <div className="services__image">
           <span className="services__dots" aria-hidden="true" />
-          <img className="services__photo" src="/img/man.png" alt="man" />
+          <img
+            className="services__photo"
+            src={`${import.meta.env.BASE_URL}img/man.png`}
+            alt="man"
+          />
         </div>
       </div>
     </div>
